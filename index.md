@@ -11,10 +11,8 @@
 
 # Recent Posts
 
-## Sysmon Event ID 22 Analysis
+## [Windows 与 Active Directory 基础笔记](./posts/windows-and-active-directory-fundamentals.md)
 
-DNS Query logging analysis.
+Windows MMC、组策略、AD 管理与 LOLBAS 基础学习笔记。
 
-## Kerberos Authentication Notes
-
-Kerberos authentication workflow.
+---
