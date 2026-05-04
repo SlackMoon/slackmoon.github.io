@@ -1,5 +1,5 @@
 # SlackMoon Security Notes
-[View WebSite](slackmoon.github.io)
+[View WebSite](https://slackmoon.github.io/)
 
 This repository contains:
 
