@@ -1,4 +1,3 @@
-[Windows_and_AD Fundamentals.md](https://github.com/user-attachments/files/27369984/Windows_and_AD.Fundamentals.md)
 # Windows 与 Active Directory 基础
 
 课程：Cyber Security 101  
@@ -21,57 +20,36 @@
 
 # Microsoft Management Console（MMC）
 
-Windows 中大量管理工具都以：
+Windows 中**大量管理工具**都以**`*.msc`**的形式存在，这些文件本质上是**Microsoft 管理控制台（MMC）组件**，下面列出在域环境中常用的两个MMC组件；
 
-```powershell
-*.msc
-```
-
-形式存在。
-
-这些文件本质上是：
-
-# Microsoft 管理控制台（MMC）组件
-
-通常通过：
-
+**打开“运行”对话框**
 ```powershell
 Win + R
 ```
 
-输入：
+**AD 用户和计算机：**
 
 ```powershell
 dsa.msc
 ```
 
-或：
+**组策略管理（GPO）**
 
 ```powershell
 gpmc.msc
 ```
-
-进行启动。
-
----
-
-# 枚举系统中的 MSC 管理工具
-
-列出系统中的所有 `.msc` 文件：
+我们还可以使用下列命令：**枚举当前系统中的 MSC 管理工具**（所有 `.msc` 文件）：
 
 ```powershell
 dir C:\Windows\System32\*.msc
 ```
-
-作用：
-
 - 枚举当前系统存在的管理控制台
 - 识别系统可用管理组件
 - 安全排查时识别管理工具
 
 ---
 
-# 常见 Windows 管理控制台
+# 常见 MMC组件说明
 
 ---
 
@@ -84,11 +62,8 @@ compmgmt.msc
 ```
 
 作用：
-
 - 打开“计算机管理”
 - 集成多个 Windows 管理模块
-
-常用组件：
 
 ---
 
@@ -218,7 +193,6 @@ secpol.msc
 > 攻击者利用Windows 自带合法程序完成攻击行为，这些程序被称为LOLBin（Living Off The Land Binary）
 
 ---
-
 ## 为什么攻击者喜欢 LOLBin
 
 优势：
@@ -229,7 +203,6 @@ secpol.msc
 - 更像正常管理员行为
 
 ---
-
 ## 常见 LOLBin
 
 | 程序 | 作用 |
@@ -407,15 +380,5 @@ Set-ADUser -Identity alice -ChangePasswordAtLogon $true
 | Event ID 4724 | 密码重置 |
 | Event ID 4732 | 用户加入高权限组 |
 | Sysmon Event ID 1 | 进程创建 |
-
----
-## 重点总结
-
-- `.msc` 是 Windows 管理控制台
-- `dsa.msc` 用于管理 Active Directory
-- `gpmc.msc` 用于管理组策略
-- LOLBin 是攻击者常用合法程序
-- PowerShell 可直接管理 AD
-- 蓝队需要重点监控管理行为与策略变更
 
 ---
