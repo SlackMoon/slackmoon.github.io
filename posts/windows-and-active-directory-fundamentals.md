@@ -2,7 +2,7 @@
 
 课程：Cyber Security 101  
 模块：[Module 3 Windows and AD Fundamentals](https://tryhackme.com/module/windows-and-active-directory-fundamentals)
-![Windows AD]([img/Pasted image 20260505015153.png](img/Pasted%20image%2020260505015153.png))
+![Windows AD](../img/20260505015153.png)
 ---
 
 # 模块概览
