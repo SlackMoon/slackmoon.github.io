@@ -24,6 +24,7 @@ Get-Help Get-Date
 Get-Help Get-Date -Online
 ```
 ![](../img/Windows_PowerShell/IMG-20260507220408195.png)
+
 **列出所有可用的别名：**
 ```powershell
 Get-Alias
