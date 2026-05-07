@@ -23,12 +23,12 @@ Get-Help Get-Date
 ```powershell
 Get-Help Get-Date -Online
 ```
-![[../img/Windows_PowerShell/IMG-20260507220408195.png]]
+![](../img/Windows_PowerShell/IMG-20260507220408195.png)
 **列出所有可用的别名：**
 ```powershell
 Get-Alias
 ```
-![[../img/Windows_PowerShell/IMG-20260507220708145.png]]
+![](../img/Windows_PowerShell/IMG-20260507220708145.png)
 **列出当前路径下的文件：**
 ```powershell
 Get-ChildItem
@@ -86,7 +86,7 @@ Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
 ```
 > 这里，`Where-Object` 按文件的 `Extension` 属性进行筛选，确保只列出扩展名等于（`-eq`）`.txt` 的文件。
 > 运算符 `-eq`（即 "**等于**"）是一组 **比较运算符** 的一部分，这些运算符与其他脚本语言（如 Bash、Python）共享。为了展示 PowerShell 过滤的潜力，我们从该列表中选择了一些最有用的运算符：
-> ![[../img/Windows_PowerShell/image20260507224307.png]]
+> ![](../img/Windows_PowerShell/image20260507224307.png)
 
 
   
@@ -94,7 +94,7 @@ Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
 ```powershell
 Get-ChildItem | Where-Object -Property "Name" -like "ship*"
 ```
-![[../img/Windows_PowerShell/IMG-20260507223446823.png]]
+![](../img/Windows_PowerShell/IMG-20260507223446823.png)
 **从对象中选择特定属性或限制返回的对象数量:**
 ```powershell
 Get-ChildItem | Select-Object Name,Length
@@ -108,7 +108,7 @@ Get-ChildItem | Sort-Object Length -Descending | Select-Object -First 1
 ```powershell
 Select-String -Path ".\battery-report.html" -Pattern "install"
 ```
-![[../img/Windows_PowerShell/20260507224023.png]]
+![](../img/Windows_PowerShell/20260507224023.png)
 **检索当前目录中大小大于 100 的项目:**
 ```powershell
 Get-ChildItem | Where-Object -Property Length -gt 100
@@ -123,7 +123,7 @@ Get-ComputerInfo
 ```powershell
 Get-LocalUser
 ```
-![[../img/Windows_PowerShell/20260507224654.png]]
+![](../img/Windows_PowerShell/20260507224654.png)
 
 **提供有关系统网络接口的详细信息，包括 IP 地址、DNS 服务器和网关配置：**
 ```powershell
